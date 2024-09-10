@@ -1,0 +1,1081 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2024-09-10T14:55:24.137874" rpa="false" schemaversion="5">
+<suite id="s1" name="RegisterTestCases" source="C:\Users\Coven\Desktop\Futer Skill\QA &amp; Software Tester\7.[01AQA2] ทดสอบเว็บแอปพลิเคชันด้วย Robot Framework และ Selenium\ClassProject Register FutureSkill\testcases\RegisterTestCases.robot">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2024-09-10T14:55:24.405876" level="INFO">Opening browser 'chrome' to base url 'https://futureskill.co'.</msg>
+<arg>${baseUrl}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-09-10T14:55:24.404810" elapsed="2.130893"/>
+</kw>
+<test id="s1-t1" name="As a user, I want to Register success with valid credential" line="13">
+<kw name="When user register future skill platform with ${email} ${firstName} ${lastName} ${phoneNumber} ${newPassword} ${confirmPassword}" owner="RegisterPageKeyword" source_name="user register future skill platform with ${email} ${firstName} ${lastName} ${phoneNumber} ${newPassword} ${confirmPassword}">
+<kw name="Wait until element is ready then click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-10T14:55:26.538704" level="INFO">Clicking element 'xpath=//button[text()="สมัครสมาชิก"]'.</msg>
+<msg time="2024-09-10T14:55:27.024705" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-09-10T14:55:27.025704" level="FAIL">Element with locator 'xpath=//button[text()="สมัครสมาชิก"]' not found.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-09-10T14:55:26.537704" elapsed="0.491999">Element with locator 'xpath=//button[text()="สมัครสมาชิก"]' not found.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-10T14:55:29.030013" level="INFO">Clicking element 'xpath=//button[text()="สมัครสมาชิก"]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-10T14:55:29.030013" elapsed="0.699580"/>
+</kw>
+<arg>3x</arg>
+<arg>2s</arg>
+<arg>click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-09-10T14:55:26.537704" elapsed="3.191889"/>
+</kw>
+<arg>xpath=//button[text()="สมัครสมาชิก"]</arg>
+<status status="PASS" start="2024-09-10T14:55:26.536705" elapsed="3.192888"/>
+</kw>
+<kw name="Wait until element is ready then input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-10T14:55:29.732590" level="INFO">Typing text 'ABC_Test1@gmail.com' into text field 'name=email'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-10T14:55:29.731592" elapsed="0.412516"/>
+</kw>
+<arg>3x</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-09-10T14:55:29.731592" elapsed="0.412516"/>
+</kw>
+<arg>name=email</arg>
+<arg>${email}</arg>
+<status status="PASS" start="2024-09-10T14:55:29.730591" elapsed="0.413517"/>
+</kw>
+<kw name="Wait until element is ready then input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-10T14:55:30.145111" level="INFO">Typing text 'TesterA' into text field 'name=firstName'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-10T14:55:30.145111" elapsed="0.122627"/>
+</kw>
+<arg>3x</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-09-10T14:55:30.145111" elapsed="0.122627"/>
+</kw>
+<arg>name=firstName</arg>
+<arg>${firstName}</arg>
+<status status="PASS" start="2024-09-10T14:55:30.145111" elapsed="0.122627"/>
+</kw>
+<kw name="Wait until element is ready then input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-10T14:55:30.269737" level="INFO">Typing text 'Malana' into text field 'name=lastName'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-10T14:55:30.268757" elapsed="0.081600"/>
+</kw>
+<arg>3x</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-09-10T14:55:30.268757" elapsed="0.081600"/>
+</kw>
+<arg>name=lastName</arg>
+<arg>${lastName}</arg>
+<status status="PASS" start="2024-09-10T14:55:30.268757" elapsed="0.082601"/>
+</kw>
+<kw name="Wait until element is ready then input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-10T14:55:30.352369" level="INFO">Typing text '0623742864' into text field 'name=phoneNumber'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-10T14:55:30.352369" elapsed="0.083449"/>
+</kw>
+<arg>3x</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-09-10T14:55:30.351358" elapsed="0.084460"/>
+</kw>
+<arg>name=phoneNumber</arg>
+<arg>${phoneNumber}</arg>
+<status status="PASS" start="2024-09-10T14:55:30.351358" elapsed="0.085468"/>
+</kw>
+<kw name="Wait until element is ready then input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-10T14:55:30.436826" level="INFO">Typing text 'Acb@12345' into text field 'name=newPassword'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-10T14:55:30.436826" elapsed="0.085331"/>
+</kw>
+<arg>3x</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-09-10T14:55:30.436826" elapsed="0.086332"/>
+</kw>
+<arg>name=newPassword</arg>
+<arg>${newPassword}</arg>
+<status status="PASS" start="2024-09-10T14:55:30.436826" elapsed="0.086332"/>
+</kw>
+<kw name="Wait until element is ready then input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-10T14:55:30.524155" level="INFO">Typing text 'Acb@12345' into text field 'name=confirmPassword'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-10T14:55:30.524155" elapsed="0.083431"/>
+</kw>
+<arg>3x</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-09-10T14:55:30.524155" elapsed="0.083431"/>
+</kw>
+<arg>name=confirmPassword</arg>
+<arg>${confirmPassword}</arg>
+<status status="PASS" start="2024-09-10T14:55:30.523158" elapsed="0.084428"/>
+</kw>
+<kw name="Wait until element is ready then click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-10T14:55:30.608591" level="INFO">Clicking element 'xpath=//input[@type="checkbox" and @name="consent"]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-10T14:55:30.608591" elapsed="0.048996"/>
+</kw>
+<arg>3x</arg>
+<arg>2s</arg>
+<arg>click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-09-10T14:55:30.607586" elapsed="0.050001"/>
+</kw>
+<arg>xpath=//input[@type="checkbox" and @name="consent"]</arg>
+<status status="PASS" start="2024-09-10T14:55:30.607586" elapsed="0.050001"/>
+</kw>
+<kw name="Wait until element is ready then click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-10T14:55:30.658589" level="INFO">Clicking element 'xpath=//button[@type="submit" and text() ="สมัครสมาชิก"]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-10T14:55:30.658589" elapsed="0.072998"/>
+</kw>
+<arg>3x</arg>
+<arg>2s</arg>
+<arg>click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-09-10T14:55:30.658589" elapsed="0.074006"/>
+</kw>
+<arg>xpath=//button[@type="submit" and text() ="สมัครสมาชิก"]</arg>
+<status status="PASS" start="2024-09-10T14:55:30.657587" elapsed="0.075008"/>
+</kw>
+<status status="PASS" start="2024-09-10T14:55:26.536705" elapsed="4.195890"/>
+</kw>
+<kw name="Then future skill should display home page and display message as &quot;ระบบได้ส่งรหัส OTP ไปยังเบอร์โทรศัพท์&quot;" owner="HomePageKeywords" source_name="future skill should display home page and display message as &quot;${expected_message}&quot;">
+<kw name="Wait until page contains element then verify text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-09-10T14:55:30.921847" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-09-10T14:55:30.921847" level="FAIL">Page should have contained text 'ระบบได้ส่งรหัส OTP ไปยังเบอร์โทรศัพท์' but did not.</msg>
+<arg>${expected_text}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="FAIL" start="2024-09-10T14:55:30.733591" elapsed="0.188256">Page should have contained text 'ระบบได้ส่งรหัส OTP ไปยังเบอร์โทรศัพท์' but did not.</status>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-09-10T14:55:33.117692" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-09-10T14:55:33.117692" level="FAIL">Page should have contained text 'ระบบได้ส่งรหัส OTP ไปยังเบอร์โทรศัพท์' but did not.</msg>
+<arg>${expected_text}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="FAIL" start="2024-09-10T14:55:32.923729" elapsed="0.193963">Page should have contained text 'ระบบได้ส่งรหัส OTP ไปยังเบอร์โทรศัพท์' but did not.</status>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-09-10T14:55:35.135708" level="INFO">Current page contains text 'ระบบได้ส่งรหัส OTP ไปยังเบอร์โทรศัพท์'.</msg>
+<arg>${expected_text}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-09-10T14:55:35.117847" elapsed="0.017861"/>
+</kw>
+<arg>3x</arg>
+<arg>2s</arg>
+<arg>Page Should Contain</arg>
+<arg>${expected_text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-09-10T14:55:30.733591" elapsed="4.402117"/>
+</kw>
+<arg>${expected_message}</arg>
+<status status="PASS" start="2024-09-10T14:55:30.732595" elapsed="4.403113"/>
+</kw>
+<status status="PASS" start="2024-09-10T14:55:30.732595" elapsed="4.403113"/>
+</kw>
+<kw name="user close browser" owner="HomePageKeywords" type="TEARDOWN">
+<kw name="Close Window" owner="SeleniumLibrary">
+<doc>Closes currently opened and selected browser window/tab.</doc>
+<status status="PASS" start="2024-09-10T14:55:35.136919" elapsed="0.118761"/>
+</kw>
+<status status="PASS" start="2024-09-10T14:55:35.136919" elapsed="0.118761"/>
+</kw>
+<status status="PASS" start="2024-09-10T14:55:26.535703" elapsed="8.719977"/>
+</test>
+<test id="s1-t2" name="As a user, This Phone number is already registered" line="18">
+<kw name="When user register future skill platform with ${email} ${firstName} ${lastName} ${usedphoneNumber} ${newPassword} ${confirmPassword}" owner="RegisterPageKeyword" source_name="user register future skill platform with ${email} ${firstName} ${lastName} ${phoneNumber} ${newPassword} ${confirmPassword}">
+<kw name="Wait until element is ready then click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-10T14:55:35.258682" level="INFO">Clicking element 'xpath=//button[text()="สมัครสมาชิก"]'.</msg>
+<msg time="2024-09-10T14:55:35.329688" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x00007FF6E8E2B5D2+29090]
+	(No symbol) [0x00007FF6E8D9E689]
+	(No symbol) [0x00007FF6E8C5AFF9]
+	(No symbol) [0x00007FF6E8C9FAE4]
+	(No symbol) [0x00007FF6E8CD6599]
+	(No symbol) [0x00007FF6E8CD0111]
+	(No symbol) [0x00007FF6E8CCF2C1]
+	(No symbol) [0x00007FF6E8C23D15]
+	GetHandleVerifier [0x00007FF6E9148C5D+3295277]
+	GetHandleVerifier [0x00007FF6E9194843+3605523]
+	GetHandleVerifier [0x00007FF6E918A707+3564247]
+	GetHandleVerifier [0x00007FF6E8EE6EB6+797318]
+	(No symbol) [0x00007FF6E8DA980F]
+	(No symbol) [0x00007FF6E8C227DA]
+	GetHandleVerifier [0x00007FF6E91EF288+3976792]
+	BaseThreadInitThunk [0x00007FFAFA08257D+29]
+	RtlUserThreadStart [0x00007FFAFBB8AF28+40]
+</msg>
+<msg time="2024-09-10T14:55:35.330680" level="FAIL">InvalidSessionIdException: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x00007FF6E8E2B5D2+29090]
+	(No symbol) [0x00007FF6E8D9E689]
+	(No symbol) [0x00007FF6E8C5AFF9]
+	(No symbol) [0x00007FF6E8CA07A8]
+	(No symbol) [0x00007FF6E8CA1B11]
+	GetHandleVerifier [0x00007FF6E9148C5D+3295277]
+	GetHandleVerifier [0x00007FF6E9194843+3605523]
+	GetHandleVerifier [0x00007FF6E918A707+3564247]
+	GetHandleVerifier [0x00007FF6E8EE6EB6+797318]
+	(No symbol) [0x00007FF6E8DA980F]
+	(No symbol) [0x00007FF6E8DA53F4]
+	(No symbol) [0x00007FF6E8DA5580]
+	(No symbol) [0x00007FF6E8D94A1F]
+	BaseThreadInitThunk [0x00007FFAFA08257D+29]
+	RtlUserThreadStart [0x00007FFAFBB8AF28+40]
+</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-09-10T14:55:35.257680" elapsed="0.075000">InvalidSessionIdException: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x00007FF6E8E2B5D2+29090]
+	(No symbol) [0x00007FF6E8D9E689]
+	(No symbol) [0x00007FF6E8C5AFF9]
+	(No symbol) [0x00007FF6E8CA07A8]
+	(No symbol) [0x00007FF6E8CA1B11]
+	GetHandleVerifier [0x00007FF6E9148C5D+3295277]
+	GetHandleVerifier [0x00007FF6E9194843+3605523]
+	GetHandleVerifier [0x00007FF6E918A707+3564247]
+	GetHandleVerifier [0x00007FF6E8EE6EB6+797318]
+	(No symbol) [0x00007FF6E8DA980F]
+	(No symbol) [0x00007FF6E8DA53F4]
+	(No symbol) [0x00007FF6E8DA5580]
+	(No symbol) [0x00007FF6E8D94A1F]
+	BaseThreadInitThunk [0x00007FFAFA08257D+29]
+	RtlUserThreadStart [0x00007FFAFBB8AF28+40]
+</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-10T14:55:37.333232" level="INFO">Clicking element 'xpath=//button[text()="สมัครสมาชิก"]'.</msg>
+<msg time="2024-09-10T14:55:37.335240" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x00007FF6E8E2B5D2+29090]
+	(No symbol) [0x00007FF6E8D9E689]
+	(No symbol) [0x00007FF6E8C5AFF9]
+	(No symbol) [0x00007FF6E8C9FAE4]
+	(No symbol) [0x00007FF6E8CD6599]
+	(No symbol) [0x00007FF6E8CD0111]
+	(No symbol) [0x00007FF6E8CCF2C1]
+	(No symbol) [0x00007FF6E8C23D15]
+	GetHandleVerifier [0x00007FF6E9148C5D+3295277]
+	GetHandleVerifier [0x00007FF6E9194843+3605523]
+	GetHandleVerifier [0x00007FF6E918A707+3564247]
+	GetHandleVerifier [0x00007FF6E8EE6EB6+797318]
+	(No symbol) [0x00007FF6E8DA980F]
+	(No symbol) [0x00007FF6E8C227DA]
+	GetHandleVerifier [0x00007FF6E91EF288+3976792]
+	BaseThreadInitThunk [0x00007FFAFA08257D+29]
+	RtlUserThreadStart [0x00007FFAFBB8AF28+40]
+</msg>
+<msg time="2024-09-10T14:55:37.337711" level="FAIL">InvalidSessionIdException: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x00007FF6E8E2B5D2+29090]
+	(No symbol) [0x00007FF6E8D9E689]
+	(No symbol) [0x00007FF6E8C5AFF9]
+	(No symbol) [0x00007FF6E8C9FAE4]
+	(No symbol) [0x00007FF6E8CD6599]
+	(No symbol) [0x00007FF6E8CD0111]
+	(No symbol) [0x00007FF6E8CCF2C1]
+	(No symbol) [0x00007FF6E8C23D15]
+	GetHandleVerifier [0x00007FF6E9148C5D+3295277]
+	GetHandleVerifier [0x00007FF6E9194843+3605523]
+	GetHandleVerifier [0x00007FF6E918A707+3564247]
+	GetHandleVerifier [0x00007FF6E8EE6EB6+797318]
+	(No symbol) [0x00007FF6E8DA980F]
+	(No symbol) [0x00007FF6E8C227DA]
+	GetHandleVerifier [0x00007FF6E91EF288+3976792]
+	BaseThreadInitThunk [0x00007FFAFA08257D+29]
+	RtlUserThreadStart [0x00007FFAFBB8AF28+40]
+</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-09-10T14:55:37.333232" elapsed="0.005481">InvalidSessionIdException: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x00007FF6E8E2B5D2+29090]
+	(No symbol) [0x00007FF6E8D9E689]
+	(No symbol) [0x00007FF6E8C5AFF9]
+	(No symbol) [0x00007FF6E8C9FAE4]
+	(No symbol) [0x00007FF6E8CD6599]
+	(No symbol) [0x00007FF6E8CD0111]
+	(No symbol) [0x00007FF6E8CCF2C1]
+	(No symbol) [0x00007FF6E8C23D15]
+	GetHandleVerifier [0x00007FF6E9148C5D+3295277]
+	GetHandleVerifier [0x00007FF6E9194843+3605523]
+	GetHandleVerifier [0x00007FF6E918A707+3564247]
+	GetHandleVerifier [0x00007FF6E8EE6EB6+797318]
+	(No symbol) [0x00007FF6E8DA980F]
+	(No symbol) [0x00007FF6E8C227DA]
+	GetHandleVerifier [0x00007FF6E91EF288+3976792]
+	BaseThreadInitThunk [0x00007FFAFA08257D+29]
+	RtlUserThreadStart [0x00007FFAFBB8AF28+40]
+</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-10T14:55:39.339036" level="INFO">Clicking element 'xpath=//button[text()="สมัครสมาชิก"]'.</msg>
+<msg time="2024-09-10T14:55:39.341472" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x00007FF6E8E2B5D2+29090]
+	(No symbol) [0x00007FF6E8D9E689]
+	(No symbol) [0x00007FF6E8C5AFF9]
+	(No symbol) [0x00007FF6E8C9FAE4]
+	(No symbol) [0x00007FF6E8CD6599]
+	(No symbol) [0x00007FF6E8CD0111]
+	(No symbol) [0x00007FF6E8CCF2C1]
+	(No symbol) [0x00007FF6E8C23D15]
+	GetHandleVerifier [0x00007FF6E9148C5D+3295277]
+	GetHandleVerifier [0x00007FF6E9194843+3605523]
+	GetHandleVerifier [0x00007FF6E918A707+3564247]
+	GetHandleVerifier [0x00007FF6E8EE6EB6+797318]
+	(No symbol) [0x00007FF6E8DA980F]
+	(No symbol) [0x00007FF6E8C227DA]
+	GetHandleVerifier [0x00007FF6E91EF288+3976792]
+	BaseThreadInitThunk [0x00007FFAFA08257D+29]
+	RtlUserThreadStart [0x00007FFAFBB8AF28+40]
+</msg>
+<msg time="2024-09-10T14:55:39.343488" level="FAIL">InvalidSessionIdException: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x00007FF6E8E2B5D2+29090]
+	(No symbol) [0x00007FF6E8D9E689]
+	(No symbol) [0x00007FF6E8C5AFF9]
+	(No symbol) [0x00007FF6E8C9FAE4]
+	(No symbol) [0x00007FF6E8CD6599]
+	(No symbol) [0x00007FF6E8CD0111]
+	(No symbol) [0x00007FF6E8CCF2C1]
+	(No symbol) [0x00007FF6E8C23D15]
+	GetHandleVerifier [0x00007FF6E9148C5D+3295277]
+	GetHandleVerifier [0x00007FF6E9194843+3605523]
+	GetHandleVerifier [0x00007FF6E918A707+3564247]
+	GetHandleVerifier [0x00007FF6E8EE6EB6+797318]
+	(No symbol) [0x00007FF6E8DA980F]
+	(No symbol) [0x00007FF6E8C227DA]
+	GetHandleVerifier [0x00007FF6E91EF288+3976792]
+	BaseThreadInitThunk [0x00007FFAFA08257D+29]
+	RtlUserThreadStart [0x00007FFAFBB8AF28+40]
+</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-09-10T14:55:39.339036" elapsed="0.005454">InvalidSessionIdException: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x00007FF6E8E2B5D2+29090]
+	(No symbol) [0x00007FF6E8D9E689]
+	(No symbol) [0x00007FF6E8C5AFF9]
+	(No symbol) [0x00007FF6E8C9FAE4]
+	(No symbol) [0x00007FF6E8CD6599]
+	(No symbol) [0x00007FF6E8CD0111]
+	(No symbol) [0x00007FF6E8CCF2C1]
+	(No symbol) [0x00007FF6E8C23D15]
+	GetHandleVerifier [0x00007FF6E9148C5D+3295277]
+	GetHandleVerifier [0x00007FF6E9194843+3605523]
+	GetHandleVerifier [0x00007FF6E918A707+3564247]
+	GetHandleVerifier [0x00007FF6E8EE6EB6+797318]
+	(No symbol) [0x00007FF6E8DA980F]
+	(No symbol) [0x00007FF6E8C227DA]
+	GetHandleVerifier [0x00007FF6E91EF288+3976792]
+	BaseThreadInitThunk [0x00007FFAFA08257D+29]
+	RtlUserThreadStart [0x00007FFAFBB8AF28+40]
+</status>
+</kw>
+<msg time="2024-09-10T14:55:39.344490" level="FAIL">Keyword 'click Element' failed after retrying 3 times. The last error was: InvalidSessionIdException: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x00007FF6E8E2B5D2+29090]
+	(No symbol) [0x00007FF6E8D9E689]
+	(No symbol) [0x00007FF6E8C5AFF9]
+	(No symbol) [0x00007FF6E8C9FAE4]
+	(No symbol) [0x00007FF6E8CD6599]
+	(No symbol) [0x00007FF6E8CD0111]
+	(No symbol) [0x00007FF6E8CCF2C1]
+	(No symbol) [0x00007FF6E8C23D15]
+	GetHandleVerifier [0x00007FF6E9148C5D+3295277]
+	GetHandleVerifier [0x00007FF6E9194843+3605523]
+	GetHandleVerifier [0x00007FF6E918A707+3564247]
+	GetHandleVerifier [0x00007FF6E8EE6EB6+797318]
+	(No symbol) [0x00007FF6E8DA980F]
+	(No symbol) [0x00007FF6E8C227DA]
+	GetHandleVerifier [0x00007FF6E91EF288+3976792]
+	BaseThreadInitThunk [0x00007FFAFA08257D+29]
+	RtlUserThreadStart [0x00007FFAFBB8AF28+40]
+</msg>
+<arg>3x</arg>
+<arg>2s</arg>
+<arg>click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="FAIL" start="2024-09-10T14:55:35.257680" elapsed="4.087810">Keyword 'click Element' failed after retrying 3 times. The last error was: InvalidSessionIdException: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x00007FF6E8E2B5D2+29090]
+	(No symbol) [0x00007FF6E8D9E689]
+	(No symbol) [0x00007FF6E8C5AFF9]
+	(No symbol) [0x00007FF6E8C9FAE4]
+	(No symbol) [0x00007FF6E8CD6599]
+	(No symbol) [0x00007FF6E8CD0111]
+	(No symbol) [0x00007FF6E8CCF2C1]
+	(No symbol) [0x00007FF6E8C23D15]
+	GetHandleVerifier [0x00007FF6E9148C5D+3295277]
+	GetHandleVerifier [0x00007FF6E9194843+3605523]
+	GetHandleVerifier [0x00007FF6E918A707+3564247]
+	GetHandleVerifier [0x00007FF6E8EE6EB6+797318]
+	(No symbol) [0x00007FF6E8DA980F]
+	(No symbol) [0x00007FF6E8C227DA]
+	GetHandleVerifier [0x00007FF6E91EF288+3976792]
+	BaseThreadInitThunk [0x00007FFAFA08257D+29]
+	RtlUserThreadStart [0x00007FFAFBB8AF28+40]
+</status>
+</kw>
+<arg>xpath=//button[text()="สมัครสมาชิก"]</arg>
+<status status="FAIL" start="2024-09-10T14:55:35.257680" elapsed="4.087810">Keyword 'click Element' failed after retrying 3 times. The last error was: InvalidSessionIdException: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x00007FF6E8E2B5D2+29090]
+	(No symbol) [0x00007FF6E8D9E689]
+	(No symbol) [0x00007FF6E8C5AFF9]
+	(No symbol) [0x00007FF6E8C9FAE4]
+	(No symbol) [0x00007FF6E8CD6599]
+	(No symbol) [0x00007FF6E8CD0111]
+	(No symbol) [0x00007FF6E8CCF2C1]
+	(No symbol) [0x00007FF6E8C23D15]
+	GetHandleVerifier [0x00007FF6E9148C5D+3295277]
+	GetHandleVerifier [0x00007FF6E9194843+3605523]
+	GetHandleVerifier [0x00007FF6E918A707+3564247]
+	GetHandleVerifier [0x00007FF6E8EE6EB6+797318]
+	(No symbol) [0x00007FF6E8DA980F]
+	(No symbol) [0x00007FF6E8C227DA]
+	GetHandleVerifier [0x00007FF6E91EF288+3976792]
+	BaseThreadInitThunk [0x00007FFAFA08257D+29]
+	RtlUserThreadStart [0x00007FFAFBB8AF28+40]
+</status>
+</kw>
+<kw name="Wait until element is ready then input text" owner="CommonKeywords">
+<arg>name=email</arg>
+<arg>${email}</arg>
+<status status="NOT RUN" start="2024-09-10T14:55:39.345490" elapsed="0.000000"/>
+</kw>
+<kw name="Wait until element is ready then input text" owner="CommonKeywords">
+<arg>name=firstName</arg>
+<arg>${firstName}</arg>
+<status status="NOT RUN" start="2024-09-10T14:55:39.345490" elapsed="0.001000"/>
+</kw>
+<kw name="Wait until element is ready then input text" owner="CommonKeywords">
+<arg>name=lastName</arg>
+<arg>${lastName}</arg>
+<status status="NOT RUN" start="2024-09-10T14:55:39.346490" elapsed="0.000000"/>
+</kw>
+<kw name="Wait until element is ready then input text" owner="CommonKeywords">
+<arg>name=phoneNumber</arg>
+<arg>${phoneNumber}</arg>
+<status status="NOT RUN" start="2024-09-10T14:55:39.346490" elapsed="0.000000"/>
+</kw>
+<kw name="Wait until element is ready then input text" owner="CommonKeywords">
+<arg>name=newPassword</arg>
+<arg>${newPassword}</arg>
+<status status="NOT RUN" start="2024-09-10T14:55:39.346490" elapsed="0.000000"/>
+</kw>
+<kw name="Wait until element is ready then input text" owner="CommonKeywords">
+<arg>name=confirmPassword</arg>
+<arg>${confirmPassword}</arg>
+<status status="NOT RUN" start="2024-09-10T14:55:39.346490" elapsed="0.000000"/>
+</kw>
+<kw name="Wait until element is ready then click element" owner="CommonKeywords">
+<arg>xpath=//input[@type="checkbox" and @name="consent"]</arg>
+<status status="NOT RUN" start="2024-09-10T14:55:39.346490" elapsed="0.000000"/>
+</kw>
+<kw name="Wait until element is ready then click element" owner="CommonKeywords">
+<arg>xpath=//button[@type="submit" and text() ="สมัครสมาชิก"]</arg>
+<status status="NOT RUN" start="2024-09-10T14:55:39.346490" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-09-10T14:55:35.256683" elapsed="4.089807">Keyword 'click Element' failed after retrying 3 times. The last error was: InvalidSessionIdException: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x00007FF6E8E2B5D2+29090]
+	(No symbol) [0x00007FF6E8D9E689]
+	(No symbol) [0x00007FF6E8C5AFF9]
+	(No symbol) [0x00007FF6E8C9FAE4]
+	(No symbol) [0x00007FF6E8CD6599]
+	(No symbol) [0x00007FF6E8CD0111]
+	(No symbol) [0x00007FF6E8CCF2C1]
+	(No symbol) [0x00007FF6E8C23D15]
+	GetHandleVerifier [0x00007FF6E9148C5D+3295277]
+	GetHandleVerifier [0x00007FF6E9194843+3605523]
+	GetHandleVerifier [0x00007FF6E918A707+3564247]
+	GetHandleVerifier [0x00007FF6E8EE6EB6+797318]
+	(No symbol) [0x00007FF6E8DA980F]
+	(No symbol) [0x00007FF6E8C227DA]
+	GetHandleVerifier [0x00007FF6E91EF288+3976792]
+	BaseThreadInitThunk [0x00007FFAFA08257D+29]
+	RtlUserThreadStart [0x00007FFAFBB8AF28+40]
+</status>
+</kw>
+<kw name="Then future skill should display display validate register fail message as &quot;อีเมล นี้ถูกใช้แล้ว&quot;" owner="RegisterPageKeyword" source_name="future skill should display display validate register fail message as &quot;${expected_message}&quot;">
+<status status="NOT RUN" start="2024-09-10T14:55:39.347915" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-09-10T14:55:35.256683" elapsed="4.092162">Keyword 'click Element' failed after retrying 3 times. The last error was: InvalidSessionIdException: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x00007FF6E8E2B5D2+29090]
+	(No symbol) [0x00007FF6E8D9E689]
+	(No symbol) [0x00007FF6E8C5AFF9]
+	(No symbol) [0x00007FF6E8C9FAE4]
+	(No symbol) [0x00007FF6E8CD6599]
+	(No symbol) [0x00007FF6E8CD0111]
+	(No symbol) [0x00007FF6E8CCF2C1]
+	(No symbol) [0x00007FF6E8C23D15]
+	GetHandleVerifier [0x00007FF6E9148C5D+3295277]
+	GetHandleVerifier [0x00007FF6E9194843+3605523]
+	GetHandleVerifier [0x00007FF6E918A707+3564247]
+	GetHandleVerifier [0x00007FF6E8EE6EB6+797318]
+	(No symbol) [0x00007FF6E8DA980F]
+	(No symbol) [0x00007FF6E8C227DA]
+	GetHandleVerifier [0x00007FF6E91EF288+3976792]
+	BaseThreadInitThunk [0x00007FFAFA08257D+29]
+	RtlUserThreadStart [0x00007FFAFBB8AF28+40]
+</status>
+</test>
+<test id="s1-t3" name="As a user, This email is already registered" line="22">
+<kw name="When user register future skill platform with ${usedemail} ${firstName} ${lastName} ${phoneNumber} ${newPassword} ${confirmPassword}" owner="RegisterPageKeyword" source_name="user register future skill platform with ${email} ${firstName} ${lastName} ${phoneNumber} ${newPassword} ${confirmPassword}">
+<kw name="Wait until element is ready then click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-10T14:55:39.357021" level="INFO">Clicking element 'xpath=//button[text()="สมัครสมาชิก"]'.</msg>
+<msg time="2024-09-10T14:55:39.359020" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x00007FF6E8E2B5D2+29090]
+	(No symbol) [0x00007FF6E8D9E689]
+	(No symbol) [0x00007FF6E8C5AFF9]
+	(No symbol) [0x00007FF6E8C9FAE4]
+	(No symbol) [0x00007FF6E8CD6599]
+	(No symbol) [0x00007FF6E8CD0111]
+	(No symbol) [0x00007FF6E8CCF2C1]
+	(No symbol) [0x00007FF6E8C23D15]
+	GetHandleVerifier [0x00007FF6E9148C5D+3295277]
+	GetHandleVerifier [0x00007FF6E9194843+3605523]
+	GetHandleVerifier [0x00007FF6E918A707+3564247]
+	GetHandleVerifier [0x00007FF6E8EE6EB6+797318]
+	(No symbol) [0x00007FF6E8DA980F]
+	(No symbol) [0x00007FF6E8C227DA]
+	GetHandleVerifier [0x00007FF6E91EF288+3976792]
+	BaseThreadInitThunk [0x00007FFAFA08257D+29]
+	RtlUserThreadStart [0x00007FFAFBB8AF28+40]
+</msg>
+<msg time="2024-09-10T14:55:39.360941" level="FAIL">InvalidSessionIdException: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x00007FF6E8E2B5D2+29090]
+	(No symbol) [0x00007FF6E8D9E689]
+	(No symbol) [0x00007FF6E8C5AFF9]
+	(No symbol) [0x00007FF6E8C9FAE4]
+	(No symbol) [0x00007FF6E8CD6599]
+	(No symbol) [0x00007FF6E8CD0111]
+	(No symbol) [0x00007FF6E8CCF2C1]
+	(No symbol) [0x00007FF6E8C23D15]
+	GetHandleVerifier [0x00007FF6E9148C5D+3295277]
+	GetHandleVerifier [0x00007FF6E9194843+3605523]
+	GetHandleVerifier [0x00007FF6E918A707+3564247]
+	GetHandleVerifier [0x00007FF6E8EE6EB6+797318]
+	(No symbol) [0x00007FF6E8DA980F]
+	(No symbol) [0x00007FF6E8C227DA]
+	GetHandleVerifier [0x00007FF6E91EF288+3976792]
+	BaseThreadInitThunk [0x00007FFAFA08257D+29]
+	RtlUserThreadStart [0x00007FFAFBB8AF28+40]
+</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-09-10T14:55:39.357021" elapsed="0.004923">InvalidSessionIdException: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x00007FF6E8E2B5D2+29090]
+	(No symbol) [0x00007FF6E8D9E689]
+	(No symbol) [0x00007FF6E8C5AFF9]
+	(No symbol) [0x00007FF6E8C9FAE4]
+	(No symbol) [0x00007FF6E8CD6599]
+	(No symbol) [0x00007FF6E8CD0111]
+	(No symbol) [0x00007FF6E8CCF2C1]
+	(No symbol) [0x00007FF6E8C23D15]
+	GetHandleVerifier [0x00007FF6E9148C5D+3295277]
+	GetHandleVerifier [0x00007FF6E9194843+3605523]
+	GetHandleVerifier [0x00007FF6E918A707+3564247]
+	GetHandleVerifier [0x00007FF6E8EE6EB6+797318]
+	(No symbol) [0x00007FF6E8DA980F]
+	(No symbol) [0x00007FF6E8C227DA]
+	GetHandleVerifier [0x00007FF6E91EF288+3976792]
+	BaseThreadInitThunk [0x00007FFAFA08257D+29]
+	RtlUserThreadStart [0x00007FFAFBB8AF28+40]
+</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-10T14:55:41.362220" level="INFO">Clicking element 'xpath=//button[text()="สมัครสมาชิก"]'.</msg>
+<msg time="2024-09-10T14:55:41.364890" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x00007FF6E8E2B5D2+29090]
+	(No symbol) [0x00007FF6E8D9E689]
+	(No symbol) [0x00007FF6E8C5AFF9]
+	(No symbol) [0x00007FF6E8C9FAE4]
+	(No symbol) [0x00007FF6E8CD6599]
+	(No symbol) [0x00007FF6E8CD0111]
+	(No symbol) [0x00007FF6E8CCF2C1]
+	(No symbol) [0x00007FF6E8C23D15]
+	GetHandleVerifier [0x00007FF6E9148C5D+3295277]
+	GetHandleVerifier [0x00007FF6E9194843+3605523]
+	GetHandleVerifier [0x00007FF6E918A707+3564247]
+	GetHandleVerifier [0x00007FF6E8EE6EB6+797318]
+	(No symbol) [0x00007FF6E8DA980F]
+	(No symbol) [0x00007FF6E8C227DA]
+	GetHandleVerifier [0x00007FF6E91EF288+3976792]
+	BaseThreadInitThunk [0x00007FFAFA08257D+29]
+	RtlUserThreadStart [0x00007FFAFBB8AF28+40]
+</msg>
+<msg time="2024-09-10T14:55:41.370165" level="FAIL">InvalidSessionIdException: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x00007FF6E8E2B5D2+29090]
+	(No symbol) [0x00007FF6E8D9E689]
+	(No symbol) [0x00007FF6E8C5AFF9]
+	(No symbol) [0x00007FF6E8C9FAE4]
+	(No symbol) [0x00007FF6E8CD6599]
+	(No symbol) [0x00007FF6E8CD0111]
+	(No symbol) [0x00007FF6E8CCF2C1]
+	(No symbol) [0x00007FF6E8C23D15]
+	GetHandleVerifier [0x00007FF6E9148C5D+3295277]
+	GetHandleVerifier [0x00007FF6E9194843+3605523]
+	GetHandleVerifier [0x00007FF6E918A707+3564247]
+	GetHandleVerifier [0x00007FF6E8EE6EB6+797318]
+	(No symbol) [0x00007FF6E8DA980F]
+	(No symbol) [0x00007FF6E8C227DA]
+	GetHandleVerifier [0x00007FF6E91EF288+3976792]
+	BaseThreadInitThunk [0x00007FFAFA08257D+29]
+	RtlUserThreadStart [0x00007FFAFBB8AF28+40]
+</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-09-10T14:55:41.362220" elapsed="0.008954">InvalidSessionIdException: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x00007FF6E8E2B5D2+29090]
+	(No symbol) [0x00007FF6E8D9E689]
+	(No symbol) [0x00007FF6E8C5AFF9]
+	(No symbol) [0x00007FF6E8C9FAE4]
+	(No symbol) [0x00007FF6E8CD6599]
+	(No symbol) [0x00007FF6E8CD0111]
+	(No symbol) [0x00007FF6E8CCF2C1]
+	(No symbol) [0x00007FF6E8C23D15]
+	GetHandleVerifier [0x00007FF6E9148C5D+3295277]
+	GetHandleVerifier [0x00007FF6E9194843+3605523]
+	GetHandleVerifier [0x00007FF6E918A707+3564247]
+	GetHandleVerifier [0x00007FF6E8EE6EB6+797318]
+	(No symbol) [0x00007FF6E8DA980F]
+	(No symbol) [0x00007FF6E8C227DA]
+	GetHandleVerifier [0x00007FF6E91EF288+3976792]
+	BaseThreadInitThunk [0x00007FFAFA08257D+29]
+	RtlUserThreadStart [0x00007FFAFBB8AF28+40]
+</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-10T14:55:43.371321" level="INFO">Clicking element 'xpath=//button[text()="สมัครสมาชิก"]'.</msg>
+<msg time="2024-09-10T14:55:43.374325" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x00007FF6E8E2B5D2+29090]
+	(No symbol) [0x00007FF6E8D9E689]
+	(No symbol) [0x00007FF6E8C5AFF9]
+	(No symbol) [0x00007FF6E8C9FAE4]
+	(No symbol) [0x00007FF6E8CD6599]
+	(No symbol) [0x00007FF6E8CD0111]
+	(No symbol) [0x00007FF6E8CCF2C1]
+	(No symbol) [0x00007FF6E8C23D15]
+	GetHandleVerifier [0x00007FF6E9148C5D+3295277]
+	GetHandleVerifier [0x00007FF6E9194843+3605523]
+	GetHandleVerifier [0x00007FF6E918A707+3564247]
+	GetHandleVerifier [0x00007FF6E8EE6EB6+797318]
+	(No symbol) [0x00007FF6E8DA980F]
+	(No symbol) [0x00007FF6E8C227DA]
+	GetHandleVerifier [0x00007FF6E91EF288+3976792]
+	BaseThreadInitThunk [0x00007FFAFA08257D+29]
+	RtlUserThreadStart [0x00007FFAFBB8AF28+40]
+</msg>
+<msg time="2024-09-10T14:55:43.378249" level="FAIL">InvalidSessionIdException: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x00007FF6E8E2B5D2+29090]
+	(No symbol) [0x00007FF6E8D9E689]
+	(No symbol) [0x00007FF6E8C5AFF9]
+	(No symbol) [0x00007FF6E8C9FAE4]
+	(No symbol) [0x00007FF6E8CD6599]
+	(No symbol) [0x00007FF6E8CD0111]
+	(No symbol) [0x00007FF6E8CCF2C1]
+	(No symbol) [0x00007FF6E8C23D15]
+	GetHandleVerifier [0x00007FF6E9148C5D+3295277]
+	GetHandleVerifier [0x00007FF6E9194843+3605523]
+	GetHandleVerifier [0x00007FF6E918A707+3564247]
+	GetHandleVerifier [0x00007FF6E8EE6EB6+797318]
+	(No symbol) [0x00007FF6E8DA980F]
+	(No symbol) [0x00007FF6E8C227DA]
+	GetHandleVerifier [0x00007FF6E91EF288+3976792]
+	BaseThreadInitThunk [0x00007FFAFA08257D+29]
+	RtlUserThreadStart [0x00007FFAFBB8AF28+40]
+</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-09-10T14:55:43.371321" elapsed="0.007930">InvalidSessionIdException: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x00007FF6E8E2B5D2+29090]
+	(No symbol) [0x00007FF6E8D9E689]
+	(No symbol) [0x00007FF6E8C5AFF9]
+	(No symbol) [0x00007FF6E8C9FAE4]
+	(No symbol) [0x00007FF6E8CD6599]
+	(No symbol) [0x00007FF6E8CD0111]
+	(No symbol) [0x00007FF6E8CCF2C1]
+	(No symbol) [0x00007FF6E8C23D15]
+	GetHandleVerifier [0x00007FF6E9148C5D+3295277]
+	GetHandleVerifier [0x00007FF6E9194843+3605523]
+	GetHandleVerifier [0x00007FF6E918A707+3564247]
+	GetHandleVerifier [0x00007FF6E8EE6EB6+797318]
+	(No symbol) [0x00007FF6E8DA980F]
+	(No symbol) [0x00007FF6E8C227DA]
+	GetHandleVerifier [0x00007FF6E91EF288+3976792]
+	BaseThreadInitThunk [0x00007FFAFA08257D+29]
+	RtlUserThreadStart [0x00007FFAFBB8AF28+40]
+</status>
+</kw>
+<msg time="2024-09-10T14:55:43.379251" level="FAIL">Keyword 'click Element' failed after retrying 3 times. The last error was: InvalidSessionIdException: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x00007FF6E8E2B5D2+29090]
+	(No symbol) [0x00007FF6E8D9E689]
+	(No symbol) [0x00007FF6E8C5AFF9]
+	(No symbol) [0x00007FF6E8C9FAE4]
+	(No symbol) [0x00007FF6E8CD6599]
+	(No symbol) [0x00007FF6E8CD0111]
+	(No symbol) [0x00007FF6E8CCF2C1]
+	(No symbol) [0x00007FF6E8C23D15]
+	GetHandleVerifier [0x00007FF6E9148C5D+3295277]
+	GetHandleVerifier [0x00007FF6E9194843+3605523]
+	GetHandleVerifier [0x00007FF6E918A707+3564247]
+	GetHandleVerifier [0x00007FF6E8EE6EB6+797318]
+	(No symbol) [0x00007FF6E8DA980F]
+	(No symbol) [0x00007FF6E8C227DA]
+	GetHandleVerifier [0x00007FF6E91EF288+3976792]
+	BaseThreadInitThunk [0x00007FFAFA08257D+29]
+	RtlUserThreadStart [0x00007FFAFBB8AF28+40]
+</msg>
+<arg>3x</arg>
+<arg>2s</arg>
+<arg>click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="FAIL" start="2024-09-10T14:55:39.356016" elapsed="4.024232">Keyword 'click Element' failed after retrying 3 times. The last error was: InvalidSessionIdException: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x00007FF6E8E2B5D2+29090]
+	(No symbol) [0x00007FF6E8D9E689]
+	(No symbol) [0x00007FF6E8C5AFF9]
+	(No symbol) [0x00007FF6E8C9FAE4]
+	(No symbol) [0x00007FF6E8CD6599]
+	(No symbol) [0x00007FF6E8CD0111]
+	(No symbol) [0x00007FF6E8CCF2C1]
+	(No symbol) [0x00007FF6E8C23D15]
+	GetHandleVerifier [0x00007FF6E9148C5D+3295277]
+	GetHandleVerifier [0x00007FF6E9194843+3605523]
+	GetHandleVerifier [0x00007FF6E918A707+3564247]
+	GetHandleVerifier [0x00007FF6E8EE6EB6+797318]
+	(No symbol) [0x00007FF6E8DA980F]
+	(No symbol) [0x00007FF6E8C227DA]
+	GetHandleVerifier [0x00007FF6E91EF288+3976792]
+	BaseThreadInitThunk [0x00007FFAFA08257D+29]
+	RtlUserThreadStart [0x00007FFAFBB8AF28+40]
+</status>
+</kw>
+<arg>xpath=//button[text()="สมัครสมาชิก"]</arg>
+<status status="FAIL" start="2024-09-10T14:55:39.356016" elapsed="4.024232">Keyword 'click Element' failed after retrying 3 times. The last error was: InvalidSessionIdException: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x00007FF6E8E2B5D2+29090]
+	(No symbol) [0x00007FF6E8D9E689]
+	(No symbol) [0x00007FF6E8C5AFF9]
+	(No symbol) [0x00007FF6E8C9FAE4]
+	(No symbol) [0x00007FF6E8CD6599]
+	(No symbol) [0x00007FF6E8CD0111]
+	(No symbol) [0x00007FF6E8CCF2C1]
+	(No symbol) [0x00007FF6E8C23D15]
+	GetHandleVerifier [0x00007FF6E9148C5D+3295277]
+	GetHandleVerifier [0x00007FF6E9194843+3605523]
+	GetHandleVerifier [0x00007FF6E918A707+3564247]
+	GetHandleVerifier [0x00007FF6E8EE6EB6+797318]
+	(No symbol) [0x00007FF6E8DA980F]
+	(No symbol) [0x00007FF6E8C227DA]
+	GetHandleVerifier [0x00007FF6E91EF288+3976792]
+	BaseThreadInitThunk [0x00007FFAFA08257D+29]
+	RtlUserThreadStart [0x00007FFAFBB8AF28+40]
+</status>
+</kw>
+<kw name="Wait until element is ready then input text" owner="CommonKeywords">
+<arg>name=email</arg>
+<arg>${email}</arg>
+<status status="NOT RUN" start="2024-09-10T14:55:43.381248" elapsed="0.000000"/>
+</kw>
+<kw name="Wait until element is ready then input text" owner="CommonKeywords">
+<arg>name=firstName</arg>
+<arg>${firstName}</arg>
+<status status="NOT RUN" start="2024-09-10T14:55:43.381248" elapsed="0.000000"/>
+</kw>
+<kw name="Wait until element is ready then input text" owner="CommonKeywords">
+<arg>name=lastName</arg>
+<arg>${lastName}</arg>
+<status status="NOT RUN" start="2024-09-10T14:55:43.381248" elapsed="0.000000"/>
+</kw>
+<kw name="Wait until element is ready then input text" owner="CommonKeywords">
+<arg>name=phoneNumber</arg>
+<arg>${phoneNumber}</arg>
+<status status="NOT RUN" start="2024-09-10T14:55:43.381248" elapsed="0.000000"/>
+</kw>
+<kw name="Wait until element is ready then input text" owner="CommonKeywords">
+<arg>name=newPassword</arg>
+<arg>${newPassword}</arg>
+<status status="NOT RUN" start="2024-09-10T14:55:43.381248" elapsed="0.000000"/>
+</kw>
+<kw name="Wait until element is ready then input text" owner="CommonKeywords">
+<arg>name=confirmPassword</arg>
+<arg>${confirmPassword}</arg>
+<status status="NOT RUN" start="2024-09-10T14:55:43.381248" elapsed="0.000000"/>
+</kw>
+<kw name="Wait until element is ready then click element" owner="CommonKeywords">
+<arg>xpath=//input[@type="checkbox" and @name="consent"]</arg>
+<status status="NOT RUN" start="2024-09-10T14:55:43.381248" elapsed="0.000000"/>
+</kw>
+<kw name="Wait until element is ready then click element" owner="CommonKeywords">
+<arg>xpath=//button[@type="submit" and text() ="สมัครสมาชิก"]</arg>
+<status status="NOT RUN" start="2024-09-10T14:55:43.382248" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-09-10T14:55:39.356016" elapsed="4.026232">Keyword 'click Element' failed after retrying 3 times. The last error was: InvalidSessionIdException: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x00007FF6E8E2B5D2+29090]
+	(No symbol) [0x00007FF6E8D9E689]
+	(No symbol) [0x00007FF6E8C5AFF9]
+	(No symbol) [0x00007FF6E8C9FAE4]
+	(No symbol) [0x00007FF6E8CD6599]
+	(No symbol) [0x00007FF6E8CD0111]
+	(No symbol) [0x00007FF6E8CCF2C1]
+	(No symbol) [0x00007FF6E8C23D15]
+	GetHandleVerifier [0x00007FF6E9148C5D+3295277]
+	GetHandleVerifier [0x00007FF6E9194843+3605523]
+	GetHandleVerifier [0x00007FF6E918A707+3564247]
+	GetHandleVerifier [0x00007FF6E8EE6EB6+797318]
+	(No symbol) [0x00007FF6E8DA980F]
+	(No symbol) [0x00007FF6E8C227DA]
+	GetHandleVerifier [0x00007FF6E91EF288+3976792]
+	BaseThreadInitThunk [0x00007FFAFA08257D+29]
+	RtlUserThreadStart [0x00007FFAFBB8AF28+40]
+</status>
+</kw>
+<kw name="Then future skill should display display validate register fail message as &quot;เบอร์โทรศัพท์ นี้ถูกใช้แล้ว&quot;" owner="RegisterPageKeyword" source_name="future skill should display display validate register fail message as &quot;${expected_message}&quot;">
+<status status="NOT RUN" start="2024-09-10T14:55:43.383096" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-09-10T14:55:39.351488" elapsed="4.032511">Keyword 'click Element' failed after retrying 3 times. The last error was: InvalidSessionIdException: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x00007FF6E8E2B5D2+29090]
+	(No symbol) [0x00007FF6E8D9E689]
+	(No symbol) [0x00007FF6E8C5AFF9]
+	(No symbol) [0x00007FF6E8C9FAE4]
+	(No symbol) [0x00007FF6E8CD6599]
+	(No symbol) [0x00007FF6E8CD0111]
+	(No symbol) [0x00007FF6E8CCF2C1]
+	(No symbol) [0x00007FF6E8C23D15]
+	GetHandleVerifier [0x00007FF6E9148C5D+3295277]
+	GetHandleVerifier [0x00007FF6E9194843+3605523]
+	GetHandleVerifier [0x00007FF6E918A707+3564247]
+	GetHandleVerifier [0x00007FF6E8EE6EB6+797318]
+	(No symbol) [0x00007FF6E8DA980F]
+	(No symbol) [0x00007FF6E8C227DA]
+	GetHandleVerifier [0x00007FF6E91EF288+3976792]
+	BaseThreadInitThunk [0x00007FFAFA08257D+29]
+	RtlUserThreadStart [0x00007FFAFBB8AF28+40]
+</status>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-09-10T14:55:43.386369" elapsed="2.067619"/>
+</kw>
+<status status="FAIL" start="2024-09-10T14:55:24.139875" elapsed="21.314113"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="2" skip="0" id="s1" name="RegisterTestCases">RegisterTestCases</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-09-10T14:55:35.329688" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x00007FF6E8E2B5D2+29090]
+	(No symbol) [0x00007FF6E8D9E689]
+	(No symbol) [0x00007FF6E8C5AFF9]
+	(No symbol) [0x00007FF6E8C9FAE4]
+	(No symbol) [0x00007FF6E8CD6599]
+	(No symbol) [0x00007FF6E8CD0111]
+	(No symbol) [0x00007FF6E8CCF2C1]
+	(No symbol) [0x00007FF6E8C23D15]
+	GetHandleVerifier [0x00007FF6E9148C5D+3295277]
+	GetHandleVerifier [0x00007FF6E9194843+3605523]
+	GetHandleVerifier [0x00007FF6E918A707+3564247]
+	GetHandleVerifier [0x00007FF6E8EE6EB6+797318]
+	(No symbol) [0x00007FF6E8DA980F]
+	(No symbol) [0x00007FF6E8C227DA]
+	GetHandleVerifier [0x00007FF6E91EF288+3976792]
+	BaseThreadInitThunk [0x00007FFAFA08257D+29]
+	RtlUserThreadStart [0x00007FFAFBB8AF28+40]
+</msg>
+<msg time="2024-09-10T14:55:37.335240" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x00007FF6E8E2B5D2+29090]
+	(No symbol) [0x00007FF6E8D9E689]
+	(No symbol) [0x00007FF6E8C5AFF9]
+	(No symbol) [0x00007FF6E8C9FAE4]
+	(No symbol) [0x00007FF6E8CD6599]
+	(No symbol) [0x00007FF6E8CD0111]
+	(No symbol) [0x00007FF6E8CCF2C1]
+	(No symbol) [0x00007FF6E8C23D15]
+	GetHandleVerifier [0x00007FF6E9148C5D+3295277]
+	GetHandleVerifier [0x00007FF6E9194843+3605523]
+	GetHandleVerifier [0x00007FF6E918A707+3564247]
+	GetHandleVerifier [0x00007FF6E8EE6EB6+797318]
+	(No symbol) [0x00007FF6E8DA980F]
+	(No symbol) [0x00007FF6E8C227DA]
+	GetHandleVerifier [0x00007FF6E91EF288+3976792]
+	BaseThreadInitThunk [0x00007FFAFA08257D+29]
+	RtlUserThreadStart [0x00007FFAFBB8AF28+40]
+</msg>
+<msg time="2024-09-10T14:55:39.341472" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x00007FF6E8E2B5D2+29090]
+	(No symbol) [0x00007FF6E8D9E689]
+	(No symbol) [0x00007FF6E8C5AFF9]
+	(No symbol) [0x00007FF6E8C9FAE4]
+	(No symbol) [0x00007FF6E8CD6599]
+	(No symbol) [0x00007FF6E8CD0111]
+	(No symbol) [0x00007FF6E8CCF2C1]
+	(No symbol) [0x00007FF6E8C23D15]
+	GetHandleVerifier [0x00007FF6E9148C5D+3295277]
+	GetHandleVerifier [0x00007FF6E9194843+3605523]
+	GetHandleVerifier [0x00007FF6E918A707+3564247]
+	GetHandleVerifier [0x00007FF6E8EE6EB6+797318]
+	(No symbol) [0x00007FF6E8DA980F]
+	(No symbol) [0x00007FF6E8C227DA]
+	GetHandleVerifier [0x00007FF6E91EF288+3976792]
+	BaseThreadInitThunk [0x00007FFAFA08257D+29]
+	RtlUserThreadStart [0x00007FFAFBB8AF28+40]
+</msg>
+<msg time="2024-09-10T14:55:39.359020" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x00007FF6E8E2B5D2+29090]
+	(No symbol) [0x00007FF6E8D9E689]
+	(No symbol) [0x00007FF6E8C5AFF9]
+	(No symbol) [0x00007FF6E8C9FAE4]
+	(No symbol) [0x00007FF6E8CD6599]
+	(No symbol) [0x00007FF6E8CD0111]
+	(No symbol) [0x00007FF6E8CCF2C1]
+	(No symbol) [0x00007FF6E8C23D15]
+	GetHandleVerifier [0x00007FF6E9148C5D+3295277]
+	GetHandleVerifier [0x00007FF6E9194843+3605523]
+	GetHandleVerifier [0x00007FF6E918A707+3564247]
+	GetHandleVerifier [0x00007FF6E8EE6EB6+797318]
+	(No symbol) [0x00007FF6E8DA980F]
+	(No symbol) [0x00007FF6E8C227DA]
+	GetHandleVerifier [0x00007FF6E91EF288+3976792]
+	BaseThreadInitThunk [0x00007FFAFA08257D+29]
+	RtlUserThreadStart [0x00007FFAFBB8AF28+40]
+</msg>
+<msg time="2024-09-10T14:55:41.364890" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x00007FF6E8E2B5D2+29090]
+	(No symbol) [0x00007FF6E8D9E689]
+	(No symbol) [0x00007FF6E8C5AFF9]
+	(No symbol) [0x00007FF6E8C9FAE4]
+	(No symbol) [0x00007FF6E8CD6599]
+	(No symbol) [0x00007FF6E8CD0111]
+	(No symbol) [0x00007FF6E8CCF2C1]
+	(No symbol) [0x00007FF6E8C23D15]
+	GetHandleVerifier [0x00007FF6E9148C5D+3295277]
+	GetHandleVerifier [0x00007FF6E9194843+3605523]
+	GetHandleVerifier [0x00007FF6E918A707+3564247]
+	GetHandleVerifier [0x00007FF6E8EE6EB6+797318]
+	(No symbol) [0x00007FF6E8DA980F]
+	(No symbol) [0x00007FF6E8C227DA]
+	GetHandleVerifier [0x00007FF6E91EF288+3976792]
+	BaseThreadInitThunk [0x00007FFAFA08257D+29]
+	RtlUserThreadStart [0x00007FFAFBB8AF28+40]
+</msg>
+<msg time="2024-09-10T14:55:43.374325" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x00007FF6E8E2B5D2+29090]
+	(No symbol) [0x00007FF6E8D9E689]
+	(No symbol) [0x00007FF6E8C5AFF9]
+	(No symbol) [0x00007FF6E8C9FAE4]
+	(No symbol) [0x00007FF6E8CD6599]
+	(No symbol) [0x00007FF6E8CD0111]
+	(No symbol) [0x00007FF6E8CCF2C1]
+	(No symbol) [0x00007FF6E8C23D15]
+	GetHandleVerifier [0x00007FF6E9148C5D+3295277]
+	GetHandleVerifier [0x00007FF6E9194843+3605523]
+	GetHandleVerifier [0x00007FF6E918A707+3564247]
+	GetHandleVerifier [0x00007FF6E8EE6EB6+797318]
+	(No symbol) [0x00007FF6E8DA980F]
+	(No symbol) [0x00007FF6E8C227DA]
+	GetHandleVerifier [0x00007FF6E91EF288+3976792]
+	BaseThreadInitThunk [0x00007FFAFA08257D+29]
+	RtlUserThreadStart [0x00007FFAFBB8AF28+40]
+</msg>
+</errors>
+</robot>
